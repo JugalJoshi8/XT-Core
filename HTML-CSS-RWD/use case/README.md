@@ -1,4 +1,6 @@
 Use Cases Details
+
+
 The folder contains the following use cases week-wise.
 
 Week1
@@ -15,5 +17,7 @@ Create site called "Sapient Tours" by adding nav bars, image list, footers which
 Create calculator using flexbox layout, which shows how to create complex layouts using flexbox properties.
 
 Week2
+
 5. UC5-> Agoda-RWD
+
 6. UC6-> RWD Tours Website

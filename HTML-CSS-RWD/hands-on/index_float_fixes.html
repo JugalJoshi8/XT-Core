@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #e1d8b9;
+            font: 100% Georgia, "Times New Roman", Times, serif;
+        }
+
+        .wrapper {
+            background-color: rgb(79, 185, 227);
+            padding: 10px;
+            color: #fff
+        }
+
+        /* clear fix for float */
+        /*.wrapper::after {
+            content: '';
+            clear: both;
+            display: block;
+        }*/
+
+        /* overflow fix for float */
+        /*.wrapper {
+            overflow: auto;
+        }*/
+
+        /* modern fix for float */
+        .wrapper {
+            display: flow-root;
+        }
+
+        .box {
+            float: left;
+            margin-right: 15px;
+            width: 150px;
+            height: 150px;
+            color: black;
+            padding: 1em;
+            background-color: rgb(207, 232, 220);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='wrapper'>
+        <div class="box">Float</div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores ducimus eaque ea alias accusantium suscipit
+            doloremque enim quas officiis sit, sapiente provident dicta iste distinctio tenetur deleniti necessitatibus tempora.
+        </p>
+    </div>
+    <p>Lorem ipsum dolor sit amet orem ipsum dolor sit amet consectetur adipisicing elit. Quarem ipsum dolor sit amet orem
+        ipsum dolor sit amet consectetur adipisicing elit. Quarem ipsum dolor sit amet orem ipsum dolor sit amet consectetur
+        adipisicing elit. Quarem ipsum dolor sit amet orem ipsum dolor sit amet consectetur adipisicing elit. Quarem ipsum
+        dolor sit amet orem ipsum dolor sit amet consectetur adipisicing elit. Quarem ipsum dolor sit amet orem ipsum dolor
+        sit amet consectetur adipisicing elit. Quarem ipsum dolor sit amet orem ipsum dolor sit amet consectetur adipisicing
+        elit. Quarem ipsum dolor sit amet orem ipsum dolor sit amet consectetur adipisicing elit. Quarem ipsum dolor sit
+        amet orem ipsum dolor sit amet consectetur adipisicing elit. Quarem ipsum dolor sit amet orem ipsum dolor sit amet
+        consectetur adipisicing elit. Quarem ipsum dolor sit amet orem ipsum dolor sit amet consectetur adipisicing elit.
+        Quasi suscipit amet fugiat porro quos atque desorem ipsum dolor sit amet consectetur adipisicing elit. Quasi suscipit
+        amet fugiat porro quos atque desorem ipsum dolor sit amet consectetur adipisicing elit. Quasi suscipit amet fugiat
+        porro quos atque desconsectetur adipisicing elit. Quasi suscipit amet fugiat porro quos atque deserunt, facilis officiis?
+        Exercitationem sapiente hic temporibus aliquid sequi maxime incidunt, animi eos nesciunt accusamus!</p>
+</body>
+
+</html>

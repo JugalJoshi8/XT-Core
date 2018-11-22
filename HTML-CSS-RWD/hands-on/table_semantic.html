@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table Semantic Elements</title>
+    <style>
+            body {
+                width: 980px;
+                margin: 10px auto;
+            }
+    
+            table,
+            th,
+            td {
+                width: 980px;
+                border: 2px solid blue;
+                text-align: left;
+                border-collapse: collapse;
+            }
+    
+            th,
+            td {
+                padding: 10px;
+            }
+        </style>
+</head>
+
+<body>
+    <h1>Items sold summary</h1>
+    <table>
+        <caption></caption>
+        <thead>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <th colspan='4'>Clothes</th>
+                <th colspan='2'>Accesories</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <th>Trousers</th>
+                <th>Skirts</th>
+                <th>Dresses</th>
+                <th>Bracelets</th>
+                <th>Rings</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                        <th rowspan="3">Belgium</th>
+                        <th>Antwerp</th>
+                        <td>33</td>
+                        <td>43</td>
+                        <td>32</td>
+                        <td>54</td>
+                        <td>54</td>
+                    </tr>
+            <tr>
+                    <th>Gent</th>
+                    <td>22</td>
+                    <td>33</td>
+                    <td>43</td>
+                    <td>32</td>
+                    <td>54</td>
+                </tr>
+            <tr>
+                <th>Brussels</th>
+                <td>22</td>
+                <td>33</td>
+                <td>43</td>
+                <td>32</td>
+                <td>54</td>
+            </tr>
+           
+        </tbody>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+    <style>
+        body {
+            width: 980px;
+            margin: 10px auto;
+        }
+
+        table,
+        th,
+        td {
+            width: 980px;
+            border: 2px solid blue;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption><h1>Training Details</h1></caption>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Technology</th>
+                <th>Client</th>
+                <th>Location</th>
+                <th colspan="2">Contact Details</th>
+                <th>Invoice Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>HTML</td>
+                <td>Sapient</td>
+                <td>NCR</td>
+                <td>abc@gmail.com</td>
+                <td>7847590967</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Angular</td>
+                <td>AgilySys</td>
+                <td>Chennai</td>
+                <td>abc@gmail.com</td>
+                <td>7847590967</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>React</td>
+                <td>IBM</td>
+                <td>Banguluru</td>
+                <td>abc@gmail.com</td>
+                <td>7847590967</td>
+                <td>250</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" style='text-align: center'>Total Invoice</td>
+                <td>500</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

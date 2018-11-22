@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agoda</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            background-color: #fff;
+            font: 100% Helvetica, "Arial", Georgia, "Times New Roman", Times, serif;
+        }
+
+        .wrapper {
+            width: 980px;
+            background-color: #fff;
+            margin: 0 auto;
+            padding: 2px;
+        }
+
+        header {
+            height: 50px;
+            background-color: rgb(23, 188, 243);
+        }
+
+        .agodaTitle {
+            float: left;
+            line-height: 50px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .signIn {
+            float: right;
+            line-height: 50px;
+            color: #fff;
+        }
+
+        .createAccount {
+            float: right;
+            height: 28px;
+            margin: 10px;
+            border: solid 1px #fff;
+            color: #fff;
+            padding: 0 10px;
+            line-height: 28px;
+        }
+
+        .homesContainer {
+            background-color: rgb(199, 240, 172);
+            height: 700px;
+            background-image: linear-gradient( lightblue, rgb(212, 228, 231));
+        }
+
+        .homes,
+        .offers {
+            width: 490px;
+            float: left;
+            color: white;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .homes {
+            color: #444;
+        }
+
+        .offers1,
+        .offers2 {
+            height: 300px;
+        }
+
+        .offers1 {
+            margin: 20px 0px;
+        }
+
+        .offers1>div {
+            float: left;
+            width: 230px;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .offers1>div:first-child {
+            margin-right: 10px;
+        }
+
+        .offers1 {
+            display: flow-root;
+        }
+
+        .save {
+            background-color: skyblue;
+        }
+
+        .host {
+            background-color:white;
+            color: #0a4867;
+        }
+
+        .offerList>div {
+            float: left;
+            width: 50%;
+        }
+
+        .offerList {
+            height: 100%;
+        }
+
+        .offerList>div {
+            background-color: steelblue;
+            color: whitesmoke;
+            height: 200px;
+            width: 220px;
+            padding: 10px;
+            box-sizing: border-box;
+
+        }
+
+        .offerList>div:first-child {
+            margin-right: 10px;
+        }
+
+        .offers2 {
+            padding: 10px;
+            background-color: white;
+            height: 300px;
+            box-sizing: border-box;
+            color: #0a4867;
+        }
+
+        .comments,
+        .destinations,
+        footer {
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            box-sizing: border-box;
+            padding-top: 50px;
+            color: #333;
+        }
+
+        .comment {
+            float: left;
+            width: 303px;
+            border-bottom: solid 4px skyblue;
+        }
+
+        .comment:not(last-child) {
+            margin-right: 10px;
+        }
+
+        .commentsTitle {
+            text-align: center;
+        }
+
+        .commentList {
+            display: flow-root;
+        }
+
+        .destinationList {
+            display: flow-root;
+        }
+
+        .destination {
+            float: left;
+            width: 225px;
+        }
+
+        .destinations h2 {
+            text-align: center;
+        }
+
+        .destination:not(last-child) {
+            margin-right: 10px;
+        }
+
+        .destination img {
+            width: 100%;
+        }
+
+        footer {
+            display: flow-root;
+            padding: 0 100px;
+            box-sizing: border-box;
+            background-color: lightgray;
+        }
+
+        footer ul {
+            float: left;
+            width: 20%;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        footer ul li {
+            font-weight: normal;
+        }
+
+        .float {
+            float: left;
+        }
+
+        .tab {
+            padding: 0 10px;
+            line-height: 40px;
+            background:rgb(23, 188, 243);
+            color: #fff;
+        }
+
+        .tab:not(:last-child) {
+            border-right: solid 2px #fff;
+        }
+
+        .clearFloat {
+            display: flow-root;
+        }
+
+        .searchInput {
+            margin: 20px 0;
+            height: 40px;
+            width: 300px;
+            outline: none;
+            border: solid 1px white;
+        }
+
+        .searchButton {
+            display: block;
+            width: 150px;
+            height: 40px;
+            background:rgb(23, 188, 243);
+            outline: none;
+            border: solid 1px white;
+            box-shadow: 2px 2px 5px white;
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class='agodaTitle'>AGODA</div>
+            <div class='createAccount'>Create Account</div>
+            <div class='signIn'>Sign In</div>
+        </header>
+        <div class="homesContainer">
+            <div class='homes'>
+                <h1>HOTELS, HOMES, HOSTELS AND MORE</h1>
+                <h2>Get the best prices on 2,000,000+ properties, worldwide</h2>
+                <div class='clearFloat'>
+                    <div class='float tab'>All Rooms</div>
+                    <div class='float tab'>Agoda Homes</div>
+                </div>
+                <input class='searchInput' />
+                <button class='searchButton'>Search</button>
+            </div>
+            <div class='offers'>
+                <div class='clearFloat'>
+                    <div class='float tab'>Whats New</div>
+                    <div class='float tab'>Explore</div>
+                </div>
+                <div class='offers1'>
+                    <div class='save'>
+                        <h2>SAVE EXTRA</h2>
+                        <div>Save extra 10% on selected destinations</div>
+                    </div>
+                    <div class='host'>
+                        <h2>BECOME A HOST</h2>
+                        <div>List your place on Agoda Homes. Pay no commissions or fees, ever.</div>
+                    </div>
+                </div>
+                <div class="offers2">
+                    <h2>TODAY'S TOP DEALS</h2>
+                    <div class='offerList'>
+                        <div>
+                            <h3>10% off</h3>
+                            <div>Expires in 1 week</div>
+                        </div>
+                        <div>
+                            <h3>20% off</h3>
+                            <div>Expires in 1 week</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comments">
+            <h2 class='commentsTitle'>Overheard from travellers</h2>
+            <div class='commentList'>
+                <div class="comment">
+                    <h3 class='place'>Meeru Island Resort & Spa</h3>
+                    <h4 class='location'>in the Maldives</h4>
+                    <p class='commentDesc'>"Our experience was truely memorable and hastle free. All thanks to Agoda and
+                        Meeru :) "</p>
+                    <p class='commentator'> - Kewal from India</p>
+                </div>
+                <div class="comment">
+                    <h3 class='place'>Meeru Island Resort & Spa</h3>
+                    <h4 class='location'>in the Maldives</h4>
+                    <p class='commentDesc'>"Our experience was truely memorable and hastle free. All thanks to Agoda and
+                        Meeru :) "</p>
+                    <p class='commentator'> - Kewal from India</p>
+                </div>
+                <div class="comment">
+                    <h3 class='place'>Meeru Island Resort & Spa</h3>
+                    <h4 class='location'>in the Maldives</h4>
+                    <p class='commentDesc'>"Our experience was truely memorable and hastle free. All thanks to Agoda and
+                        Meeru :) "</p>
+                    <p class='commentator'> - Kewal from India</p>
+                </div>
+            </div>
+        </div>
+
+        <div class='destinations'>
+            <h2>Most popular destinations</h2>
+            <div class='destinationList'>
+                <div class="destination">
+                    <img src='images/destination.jpg' />
+                </div>
+                <div class="destination">
+                    <img src='images/destination.jpg' />
+                </div>
+                <div class="destination">
+                    <img src='images/destination.jpg' />
+                </div>
+                <div class="destination">
+                    <img src='images/destination.jpg' />
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <ul>help
+                <li>Contact us</li>
+                <li>FAQs</li>
+                <li>Private Policy</li>
+                <li>Cookie Policy</li>
+                <li>Terms of use</li>
+            </ul>
+            <ul>About us
+                <li>Contact us</li>
+                <li>FAQs</li>
+                <li>Private Policy</li>
+                <li>Cookie Policy</li>
+                <li>Terms of use</li>
+            </ul>
+            <ul>Destinations
+                <li>Contact us</li>
+                <li>FAQs</li>
+                <li>Private Policy</li>
+                <li>Cookie Policy</li>
+                <li>Terms of use</li>
+            </ul>
+            <ul>Partner with us
+                <li>Contact us</li>
+                <li>FAQs</li>
+                <li>Private Policy</li>
+                <li>Cookie Policy</li>
+                <li>Terms of use</li>
+            </ul>
+            <ul>Get the app
+                <li>Contact us</li>
+                <li>FAQs</li>
+                <li>Private Policy</li>
+                <li>Cookie Policy</li>
+                <li>Terms of use</li>
+            </ul>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

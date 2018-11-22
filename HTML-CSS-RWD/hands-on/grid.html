@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        body {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: minmax(200px, 1fr) repeat(2, 1fr);
+            row-gap: 5px;
+            column-gap: 10px;
+            justify-content: center;
+        }
+
+        .wrapper > div {
+            min-height: 50px;
+            background-color: aquamarine;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <main class="wrapper">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+    </main>
+</body>
+</html>

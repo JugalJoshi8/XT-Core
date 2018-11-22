@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 100px;
+            background-color: skyblue;
+            margin: 10px auto;
+            overflow: auto;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+
+        .scroll > p {
+            width: 200px;
+        }
+
+        .hidden {
+            overflow: hidden
+        }
+
+        .visible {
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus doloremque libero consectetur id magnam quasi
+            facere, qui minus excepturi tempore numquam quidem eos porro, ipsum earum voluptatem eaque eligendi totam.</p>
+    </div>
+    <div class="box scroll">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus doloremque libero consectetur id magnam quasi
+                facere, qui minus excepturi tempore numquam quidem eos porro, ipsum earum voluptatem eaque eligendi totam.</p>
+    </div>
+    <div class="box hidden">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus doloremque libero consectetur id magnam quasi
+                facere, qui minus excepturi tempore numquam quidem eos porro, ipsum earum voluptatem eaque eligendi totam.</p>
+    </div>
+    <div class="box visible">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus doloremque libero consectetur id magnam quasi
+                facere, qui minus excepturi tempore numquam quidem eos porro, ipsum earum voluptatem eaque eligendi totam.</p>
+    </div>
+</body>
+
+</html>

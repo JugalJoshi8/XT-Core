@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            width: 980px;
+            margin: 0 auto;
+            background-color: wheat;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: solid 2px navy;
+            background-color: rgba(66, 115, 143, 0.2);
+            position: relative;
+            padding: 20px;
+        }
+
+        .positioned {
+            position: relative;
+            background-color: yellow;
+            top: 30px;
+            left: 30px;
+        }
+
+        .box1 {
+            width: 70%;
+            left: -40px;
+        }
+
+        .box2,
+        .box3 {
+            top: -20px;
+            width: 25%;
+            float: left;
+        }
+
+        .box2 {
+            margin-right: 20px;
+        }
+
+        .boxParent {
+            display: flow-root;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class='box box1'>
+            <h2>Come see the fantastic Coit Tower!</h2>
+            <p>
+                Did you know that Coit Tower is a monument to the firefighters of San Francisco? It rises 210 feet over telegraph hi;ll and provides stunning views of the city.
+            </p>
+        </div>
+        <div class= 'boxParent'>
+            <p class='box box2'>
+                Money for the tower was provided by Lillie Coit, an eccentric socialite who had deep connections to the city's firefighters
+            </p>
+            <p class='box box3'>
+                If you wabt to visit, consider walking! Parking is limited at thetower, and it's often faster (and more scenic) to just walk.
+            </p>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

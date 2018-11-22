@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex - Alignment</title>
+    <style>
+
+        body {
+            width: 70%;
+            margin: 20px auto;
+            background-color: #ddd;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        button {
+            font-size: 18px;
+            line-height: 1.5;
+            width: 15%;
+        }
+
+        button:first-child {
+            order: 1;
+        }
+
+        button:nth-child(3) {
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button>1. Smile</button>
+        <button>2. Laugh</button>
+        <button>3. Wink</button>
+        <button>4. Shrug</button>
+        <button>5. Blush</button>
+    </div>
+</body>
+</html>

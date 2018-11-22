@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+    <style>
+        body {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+        table {
+            border: solid 5px black;
+            border-top: none;
+        }
+        caption {
+            border: solid 5px black;
+            border-bottom: none;
+            background-color: darkgoldenrod;
+            font-style: italic;
+        }
+
+        th {
+            background-color: yellow;
+        }
+
+        td {
+            background-color: #ddd;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+        th:last-child, td:last-child {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="wrapper">
+    <table>
+        <caption>
+            <h1>2012 Temperature Highlights</h1>
+        </caption>
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th>Annual Average Temperature<div class = 'italic'>(Normal)</div</th>
+                <th>Days 100F or Above<div class = 'italic'>(Normal)</div</th>
+                <th>Days 90F or above<div class = 'italic'>(Normal)</div</th>
+                <th>Days 32F or below<div class = 'italic'>(Normal)</div</th>
+                <th>Mornings 10F or below<div class = 'italic'>(Normal)</div</th>
+                <th>Warmest Day</th>
+                <th>Coldest Morning</th>
+                <th>Other Highlights</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Wichita</th>
+                <td>
+                    <div class = 'red'>61.4</div>
+                    <div class = 'bold italic'>1st warmenst</div>
+                    <div class = 'italic'>(57.0)</div>
+                </td>
+                <td>
+                    <div class = 'red'>61.4</div>
+                    <div class = 'bold italic'>1st warmenst</div>
+                    <div class = 'italic'>(57.0)</div>
+                </td>
+                <td>
+                    <div class = 'red'>61.4</div>
+                    <div class = 'bold italic'>1st warmenst</div>
+                    <div class = 'italic'>(57.0)</div>
+                </td>
+                <td>
+                    <div class = 'red'>61.4</div>
+                    <div class = 'bold italic'>1st warmenst</div>
+                    <div class = 'italic'>(57.0)</div>
+                </td>
+                <td>
+                    <div class = 'red'>61.4</div>
+                    <div class = 'bold italic'>1st warmenst</div>
+                    <div class = 'italic'>(57.0)</div>
+                </td>
+                <td>
+                    <div class = 'red'>111</div>
+                    <div class = 'italic'>Jun 29, 30</div>
+                </td>
+                <td>
+                    <div class = 'red'>7</div>
+                    <div class = 'italic'>Dec 29</div>
+                </td>
+                <td class = 'italic' >
+                    <div>*5th Warmest Winter</div>
+                    <div>*1st Warmest Spring</div>
+                    <div>*6th Warmest Summer</div>
+                    <div>*All Monthly</div>
+                    <div>Temperature above normal</div>
+                </td>
+            </tr>
+            <tr>
+                <th>Salina</th>
+                <td>
+                        <div class = 'red'>59.4</div>
+                        <div class = 'bold italic'>6th warmenst</div>
+                        <div class = 'italic'>(56.1)</div>
+                    </td>
+                    <td>
+                        <div class = 'red'>37</div>
+                        <div class = 'bold italic'>Tied 8th Most</div>
+                        <div class = 'italic'>(62.0)</div>
+                    </td>
+                    <td>
+                        <div class = 'red'>61.4</div>
+                        <div class = 'bold italic'>Tied 6th Most</div>
+                        <div class = 'italic'>(65.0)</div>
+                    </td>
+                    <td>
+                        <div class = 'red'>61.4</div>
+                        <div class = 'bold italic'>Tied 15th Lest</div>
+                        <div class = 'italic'>(63.0)</div>
+                    </td>
+                    <td>
+                        <div class = 'red'>61.4</div>
+                        <div class = 'bold italic'>1st warmenst</div>
+                        <div class = 'italic'>(57.0)</div>
+                    </td>
+                    <td>
+                        <div class = 'red'>111</div>
+                        <div class = 'italic'>Jun 29, 30</div>
+                    </td>
+                    <td>
+                        <div class = 'red'>7</div>
+                        <div class = 'italic'>Dec 29</div>
+                    </td>
+                    <td class = 'italic' >
+                        <div>*5th Warmest Winter</div>
+                        <div>*1st Warmest Spring</div>
+                        <div>*6th Warmest Summer</div>
+                        <div>*All Monthly</div>
+                        <div>Temperature above normal</div>
+                    </td>
+            </tr>
+            <tr>
+                <th>Chanute</th>
+                <td>
+                        <div class = 'red'>61.4</div>
+                        <div class = 'bold italic'>1st warmenst</div>
+                        <div class = 'italic'>(57.0)</div>
+                    </td>
+                    <td>
+                        <div class = 'red'>61.4</div>
+                        <div class = 'bold italic'>1st warmenst</div>
+                        <div class = 'italic'>(57.0)</div>
+                    </td>
+                    <td>
+                        <div class = 'red'>61.4</div>
+                        <div class = 'bold italic'>1st warmenst</div>
+                        <div class = 'italic'>(57.0)</div>
+                    </td>
+                    <td>
+                        <div class = 'red'>61.4</div>
+                        <div class = 'bold italic'>1st warmenst</div>
+                        <div class = 'italic'>(57.0)</div>
+                    </td>
+                    <td>
+                        <div class = 'red'>61.4</div>
+                        <div class = 'bold italic'>1st warmenst</div>
+                        <div class = 'italic'>(57.0)</div>
+                    </td>
+                    <td>
+                        <div class = 'red'>111</div>
+                        <div class = 'italic'>Jun 29, 30</div>
+                    </td>
+                    <td>
+                        <div class = 'red'>7</div>
+                        <div class = 'italic'>Dec 29</div>
+                    </td>
+                    <td class = 'italic' >
+                        <div>*5th Warmest Winter</div>
+                        <div>*1st Warmest Spring</div>
+                        <div>*6th Warmest Summer</div>
+                        <div>*All Monthly</div>
+                        <div>Temperature above normal</div>
+                    </td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+
+</html>

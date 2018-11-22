@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #e1d8b9;
+            font: 100% Georgia, "Times New Roman", Times, serif;
+        }
+
+        img {
+            float: left;
+            margin-right: 5px;
+        }
+
+        .wrapper {
+            width: 980px;
+            background-color: whitesmoke;
+            margin: 0 auto;
+            border: 1px solid blue;
+            height: 460px;
+        }
+
+        .header {
+            height: 50px;
+            text-align: center;
+            background-color: burlywood;
+            border-bottom: solid 1px black;
+            margin-bottom: 10px;
+        }
+
+        .columns>* {
+            float: left;
+            width: 325.33px;
+            height: 100%;
+        }
+
+        .column1 {
+            background-color: rgb(61, 109, 131);
+            margin-right: 2px;
+        }
+
+        .column2 {
+            background-color: rgb(8, 52, 148);
+            margin-right: 2px;
+        }
+
+        .column3 {
+            background-color: rgb(41, 74, 104);
+        }
+
+        .columns::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class='wrapper'>
+        <header class='header'>Application Header</header>
+        <div class='columns'>
+            <div class='column1'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quae cupiditate atque dolor assumenda, saepe et deserunt quas
+                nobis quo odit natus nisi aliquid quod laboriosam veniam odio tenetur suscipit.Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Nemo, quae cupiditate atque dolor assumenda, saepe et deserunt quas nobis quo
+                odit natus nisi aliquid quod laboriosam veniam odio tenetur suscipit.Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nemo, quae cupiditate atque dolor assumenda, saepe et deserunt quas nobis quo odit natus
+                nisi aliquid quod laboriosam veniam odio tenetur suscipit.
+            </div>
+            <div class='column2'>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus reiciendis officiis magnam incidunt doloribus consequuntur
+                provident in, quod beatae culpa fugiat totam suscipit fuga fugit eum. Aliquid alias provident a.
+            </div>
+            <div class='column3'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quae cupiditate atque dolor assumenda, saepe et deserunt quas
+                nobis quo odit natus nisi aliquid quod laboriosam veniam odio tenetur suscipit.
+            </div>
+        </div>
+        <footer>Application footer</footer>
+    </div>
+</body>
+
+</html>

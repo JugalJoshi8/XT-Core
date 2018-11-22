@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <style>
+
+        .wrapper {
+            width: 400px;
+            margin: 0 auto;
+            border: solid 2px lightblue;
+        }
+
+        .numpad {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            border-top: solid 1px grey; 
+        }
+
+         .numpad > div{
+            width: 25%;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .numpad > div:nth-child(-n + 20) {
+            border-bottom: solid 1px grey; 
+        }
+
+        .numpad > div:not(:nth-child(4n)) {
+            border-right: solid 1px grey; 
+
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            text-align: right;
+            padding: 10px;
+            font-weight: bold;
+            border: solid 2px black;
+            box-sizing: border-box;
+            font-size: 24px;
+        }
+
+        .number {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .mContainer {
+            display:flex;
+            justify-content: center;
+        }
+
+        .mContainer > div {
+            width: 25%;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+            <input value = '0'/>
+            <div class = 'mContainer'>
+                <div>M+</div>
+                <div>M-</div>
+                <div>M5</div>
+            </div>
+            <div class = 'numpad'>
+                <div>%</div>
+                <div>&check;</div>
+                <div>x<sup>2</sup></div>
+                <div>1/x</div>
+                <div>CE</div>
+                <div>C</div>
+                <div>&#8592</div>
+                <div>&#247</div>
+                <div class = 'number'>7</div>
+                <div class = 'number'>8</div>
+                <div class = 'number'>9</div>
+                <div>&times;</div>
+                <div class = 'number'>4</div>
+                <div class = 'number'>5</div>
+                <div class = 'number'>6</div>
+                <div>-</div>
+                <div class = 'number'>1</div>
+                <div class = 'number'>2</div>
+                <div class = 'number'>3</div>
+                <div>+</div>
+                <div>&plusmn;</div>
+                <div class = 'number'>0</div>
+                <div>.</div>
+                <div>=</div>
+            </div>
+    </div>
+   
+</body>
+</html>

@@ -19,7 +19,7 @@ Create calculator using flexbox layout, which shows how to create complex layout
 ## Week2
 
 ### 5. UC5-> Agoda-RWD
-Create Home page of [Agoda](https://www.agoda.com)as a Responsive web design. The content is Static.
+Create Home page of [Agoda](https://www.agoda.com) as a Responsive web design. The content is Static.
 
 ### 6. UC6-> RWD Tours Website
 MOdify the Sapient Tours into a responsive web design.

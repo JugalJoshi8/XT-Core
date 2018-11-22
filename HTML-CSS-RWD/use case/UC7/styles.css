@@ -1,0 +1,50 @@
+body {
+    width: 80%;
+    margin: 30px auto;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+}
+table {
+    border: solid 5px black;
+    border-top: none;
+}
+caption {
+    border: solid 5px black;
+    border-bottom: none;
+    background-color: darkgoldenrod;
+    font-style: italic;
+}
+
+th {
+    background-color: yellow;
+}
+
+td {
+    background-color: #ddd;
+}
+
+.red {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+th:last-child, td:last-child {
+    width: 20%;
+}

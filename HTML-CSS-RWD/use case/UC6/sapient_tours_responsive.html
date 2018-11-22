@@ -2,111 +2,15 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Layout Task</title>
-    <style>
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font: 100% Georgia, "Times New Roman", Times, serif;
-            background-color: #fff;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        nav {
-            position: sticky;
-            top: 0;
-            left: 0;
-        }
-
-        nav ul {
-            list-style: none;
-            height: 50px;
-            background-color: rgb(202, 117, 5);
-        }
-
-        nav li {
-            float: left;
-            width: 20%;
-            box-sizing: border-box;
-            padding-left: 20px;
-            line-height: 50px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        main {
-            width: 980px;
-            margin: 0 auto;
-            display: flow-root;
-        }
-
-        .mainImg {
-            float: left;
-            width: 300px;
-            margin-right: 10px;
-
-        }
-
-        .logo {
-            font-size: 30px;
-            font-weight: bold;
-            line-height: 50px;
-            width: 980px;
-            margin: 0 auto;
-            margin-top: 10px;
-        }
-
-        .logoImg {
-            height: 50px;
-            float: left;
-            margin-right: 10px;
-        }
-
-        article,
-        aside {
-            float: left;
-            box-sizing: border-box;
-        }
-
-        article {
-            padding-right: 10px;
-            width: 70%;
-        }
-
-        aside {
-            width: 30%;
-        }
-
-        aside ul {
-            display: flow-root;
-            padding: 0;
-        }
-
-        aside li {
-            float: left;
-            width: 143px;
-            margin-right: 4px;
-        }
-
-        aside li img {
-            width: 100%;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-
+    <div class="wrapper">
     <div class="logo">
         <img class='logoImg' src="images/sapient_logo.png" /> Sapient Tours
     </div>
@@ -198,6 +102,7 @@
 
         </aside>
     </main>
+    </div>
 
 </body>
 

@@ -1,0 +1,39 @@
+.wrapper {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+    height: 500px;
+    background-color: aquamarine;
+}
+
+.box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: solid 3px black;
+}
+
+.box1 {
+    top: -90px;
+    left: -90px;
+}
+
+ .box2 {
+    top: -90px;
+    right: -90px;
+}
+
+ .box3 {
+    bottom: -90px;
+    left: -90px;
+}
+
+ .box4 {
+    bottom: -90px;
+    right: -90px;;
+}
+.box5 {
+    left: 430px;
+    top: 200px;;
+    border: solid 3px red;
+}

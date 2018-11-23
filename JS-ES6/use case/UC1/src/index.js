@@ -3,10 +3,10 @@
 
 function consoleCalculator(operator = '+', operand1 = 0, operand2 = 0) {
     let result = 0;
-    const intOperand1 = parseInt(operand1, 10);
-    const intOperand2 = parseInt(operand2, 10);
+    const floatOperand1 = parseFloat(operand1, 10);
+    const floatOperand2 = parseFloat(operand2, 10);
     // return if arguments are not number convertable
-    if(isNaN(intOperand1) || isNaN(intOperand2)) {
+    if(isNaN(floatOperand1) || isNaN(floatOperand2)) {
         console.log('arguments are not proper');
         return;
     }
@@ -16,22 +16,22 @@ function consoleCalculator(operator = '+', operand1 = 0, operand2 = 0) {
     //}
     switch (operator) {
         case '+':
-            result = intOperand1 + intOperand2;
+            result = floatOperand1 + floatOperand2;
             break;
         case '-':
-            result = intOperand1 - intOperand2;
+            result = floatOperand1 - floatOperand2;
             break;
         case '*':
-            result = intOperand1 * intOperand2;
+            result = floatOperand1 * floatOperand2;
             break;
         case '/':
-            result = intOperand1 / intOperand2;
+            result = floatOperand1 / floatOperand2;
             break;
         case '%':
-            result = intOperand1 % intOperand2;
+            result = floatOperand1 % floatOperand2;
             break;
         case '**':
-            result = intOperand1 ** intOperand2;
+            result = floatOperand1 ** floatOperand2;
             break;
         default:
             break;

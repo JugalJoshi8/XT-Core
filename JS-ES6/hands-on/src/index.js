@@ -1,12 +1,12 @@
-let age = 18;
-const STATUS = true;
-const employee = null;
+// object augmentation
 
-// ES6 function arguments default value syntax
-function add(a = 0, b = 0) {
-    return a + b;
+// empty object
+function Employee() {
+
 }
 
-console.log(`sum is ${add()}`);
-console.log(`sum is ${add(10)}`);
-console.log(`sum is ${add(10, 10)}`);
+const emp = new Employee();
+
+emp.id = 1;
+
+console.log(emp);

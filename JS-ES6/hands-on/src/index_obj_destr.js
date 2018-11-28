@@ -24,7 +24,7 @@ const getStocks1 = (id, value, symbol) => ({
 });
 console.log(getStocks1(3, 900, "DSF"));
 
-// Deconstructoring nested objects
+// Destructoring nested objects
 const getCustomers = ({custId: id, address: { city }}) => {
     console.log(id, city);
 };

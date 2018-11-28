@@ -4,7 +4,7 @@
 
 const getValue = (_ => {
     const cache = new Map();
-    const getValue = (value) => {
+    const getValue = value => {
         if (cache.get(value)) {
             return 'Value already cached ' + cache.get(value);
         }

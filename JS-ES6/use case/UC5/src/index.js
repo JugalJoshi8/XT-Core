@@ -21,7 +21,8 @@ const fetchGitUserNames = _ => {
         });
         
         Promise.all(promises).then((res) => {
-            console.log(res);
+            const names = res.map(user => user.name);
+            console.log(names);
         })
 }
 

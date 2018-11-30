@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /JS-ES6/mock-server/node_modules
+/BOOTSTRAP-APP/node_modules
 /.pnp
 .pnp.js
 

@@ -1,0 +1,75 @@
+header {
+    height: 60px;
+    background-color:rgb(23, 188, 243);
+    color: #fff;
+}
+
+header button {
+    border: 1px solid #fff;
+    height: 40px;
+    background-color: transparent;
+    color: inherit;
+}
+
+.tab {
+    line-height: 40px;
+    background: rgb(23, 188, 243);
+    color: #fff;
+}
+
+.tab:not(:last-child) {
+    border-right: solid 2px #fff;
+}
+
+.searchInput {
+    height: 40px;
+    outline: none;
+    border: solid 1px white;
+}
+
+.searchButton {
+    display: block;
+    width: 40%;
+    height: 40px;
+    background: rgb(23, 188, 243);
+    outline: none;
+    border: solid 1px white;
+    box-shadow: 2px 2px 5px white;
+    font-size: 18px;
+    color: white;
+}
+
+.homesContainer {
+    background-image: linear-gradient( lightblue, rgb(212, 228, 231));
+}
+
+.save {
+    background-color: skyblue;
+    color: #fff;
+}
+
+.host {
+    background-color: white;
+    color: #0a4867;
+}
+
+.offers2 {
+    background-color: #fff;
+}
+
+.offerList > div {
+    background-color: steelblue;
+    color:#fff
+}
+
+.comment {
+    border-bottom: solid 4px skyblue;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    background-color: lightgray;
+}

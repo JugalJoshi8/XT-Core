@@ -1,0 +1,47 @@
+header {
+    height: 100px;
+}
+
+.sapient-logo {
+    height: 80px;
+}
+
+nav, li, ul {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav > ul {
+    background-color: rgb(202, 117, 5);
+}
+
+nav li {
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.mainImg {
+    float: left;
+    width: 40%;
+}
+
+aside img {
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    nav ul {
+        display: flex;
+        width: auto
+    }
+
+    nav li {
+        width: auto;
+        flex: 1;
+    }
+}

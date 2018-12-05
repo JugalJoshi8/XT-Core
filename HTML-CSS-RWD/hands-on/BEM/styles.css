@@ -1,0 +1,27 @@
+.btn {
+    width: auto;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-transform: uppercase;
+    border: solid 1px black;
+}
+
+.btn__txt {
+    padding: 0 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.btn--big {
+    font-size: 28px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+div>div>div>div>div>div>div>div>div>div>div {
+    color: orange;
+}
+.a {
+    color: blue;
+}

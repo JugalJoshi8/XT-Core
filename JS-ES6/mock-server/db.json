@@ -35,5 +35,72 @@
       "name": "cvbcv",
       "city": "zzzzzzzzz"
     }
+  ],
+  "personalInfo": [
+    {
+      "firstName": "asd",
+      "lastName": "asd",
+      "email": "asd@ads",
+      "zipcode": "fdg23423",
+      "city": "sad",
+      "mobile": "2343433333",
+      "country": "ENG",
+      "gender": "Male",
+      "adult": false,
+      "criminal": false,
+      "id": 1
+    },
+    {
+      "firstName": "dfgf",
+      "lastName": "dfgf",
+      "email": "asd@ads",
+      "zipcode": "fdg23423",
+      "city": "sad",
+      "mobile": "2343433333",
+      "country": "ENG",
+      "gender": "Male",
+      "adult": false,
+      "criminal": false,
+      "id": 2
+    },
+    {
+      "firstName": "Jugal",
+      "lastName": "Joshi",
+      "email": "jj@gmail.com",
+      "zipcode": "121212",
+      "city": "GG",
+      "mobile": "9000009999",
+      "country": "IN",
+      "gender": "Male",
+      "adult": true,
+      "criminal": false,
+      "id": 3
+    },
+    {
+      "firstName": "kk",
+      "lastName": "jj",
+      "email": "kk@gmail.com",
+      "zipcode": "fdg23423",
+      "city": "GG",
+      "mobile": "9000009988",
+      "country": "AUS",
+      "gender": "Female",
+      "adult": false,
+      "criminal": true,
+      "id": 4
+    },
+    {
+      "firstName": "asd",
+      "lastName": "zxczxc",
+      "email": "asd@ads",
+      "zipcode": "fdg23423",
+      "city": "sad",
+      "mobile": "2343433333",
+      "country": "AUS",
+      "gender": "Male",
+      "adult": false,
+      "criminal": false,
+      "id": 5
+    }
   ]
 }

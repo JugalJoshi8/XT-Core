@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript-apps</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container p-5">
+        <h1>Form</h1>
+        <form id = 'pform' action="" >
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input class='form-control' type="text" id='firstName' placeholder='Enter First Name' />
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input class='form-control' type="text" id='lastName' placeholder='Enter Last Name' />
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select class='form-control' id='country'>
+                        <option value='IN'>India</option>
+                        <option value='AUS'>Australia</option>
+                        <option selected value='ENG'>England</option>
+                    </select>
+                </div>
+                <div class='mt-4'>Gender</div>
+                <div class="form-check">
+                    <input type='radio' name='gender' class='form-check-input' id='gender1' value='Male' />
+                    <label class='form-check-label' for="gender1">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type='radio' name='gender' class='form-check-input' id='gender2' value='Female' />
+                    <label class='form-check-label' for="gender2">Female</label>
+                </div>
+                <div class="form-check mt-4">
+                    <input type='checkbox' name='adult' class='form-check-input' id='adult' />
+                    <label class='form-check-label' for="adult">Are you an adult?</label>
+                </div>
+                <div class="form-check mt-4">
+                    <input type='checkbox' name='criminal' class='form-check-input' id='criminal' />
+                    <label class='form-check-label' for="adult">Are you a criminal?</label>
+                </div>
+                <input class="btn btn-primary mt-4" type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src='./index_forms_lab.js' />
+    </body>
+</html>

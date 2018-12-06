@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+input.touched:invalid, form.formTouched input:invalid {
+    border: none;
+    outline: solid 2px red;
+    box-shadow: 2px 2px 4px red;
+}
+
+input.touched:focus:invalid, form.formTouched input:focus:invalid {
+    outline: solid 2px red;
+    border: none;
+    box-shadow: 2px 2px 4px rgb(248, 151, 151);
+  }
+
+  .errMsg {
+      display: none;
+      color: red;
+  }
+
+  input.touched:invalid + div, form.formTouched input:invalid +div {
+    display: block;
+  }
+
+  .successMsg {
+      display: none;
+  }
+
+  input[type=text], input[type=email], select {
+      box-shadow: 2px 2px 4px #666;
+  }
+
+
+
+  /* .form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+}
+
+input[type=submit] {    
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #005cbf;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+} */

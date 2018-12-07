@@ -1,0 +1,15 @@
+html, body, p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        margin: 0;
+        padding: 0;
+    }
+}

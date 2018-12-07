@@ -1,0 +1,54 @@
+@import './reset';
+@import './mixin';
+@import './inherit';
+
+$col1BG: aqua;
+$col2BG: aquamarine;
+$col3BG: azure;
+
+$col1TxtColor: #000;
+$col2TxtColor: #666;
+$col3TxtColor: #999;
+$wrapperHeight: 300px;
+
+
+.wrapper {
+    display: flex;
+    height: $wrapperHeight;
+    width: 100%;
+    padding: 1em;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.col--1 {
+    @include color($col1BG, black);
+}
+
+.col--2 {
+    @include color($col2BG, black);
+}
+
+.col--3 {
+    @include color($col3BG, black);
+}
+
+.col--1__text {
+    color: $col1TxtColor;
+    @extend %padding1em;
+}
+
+.col--2__text {
+    color: $col2TxtColor;
+    @extend %padding1em;
+}
+
+.col--3__text {
+    color: $col3TxtColor;
+    @extend %padding1em;
+}

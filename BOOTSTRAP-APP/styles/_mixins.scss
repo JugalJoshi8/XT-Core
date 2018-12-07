@@ -1,0 +1,10 @@
+@mixin transform($property) {
+    transform: $property; 
+    transform-origin: 50%;
+}
+
+@mixin colors($text, $bg, $border) {
+    color: $text;
+    background-color:$bg;
+    border: solid 1px $border;
+}

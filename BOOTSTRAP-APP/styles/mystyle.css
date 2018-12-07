@@ -1,0 +1,105 @@
+html, body, p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.item-3, .item-2, .item-1 {
+  padding: 0.5em;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  text-align: left;
+}
+
+#main {
+  width: 100%;
+}
+
+#sidebar {
+  width: 5em;
+}
+
+p {
+  font-size: 25px;
+  width: 50.5px;
+  width: 500px;
+  margin-left: 9em;
+  color: blue;
+}
+
+p:after {
+  content: " your age is 18";
+  display: block;
+}
+
+p:after {
+  content: "1234";
+}
+
+.item-1 {
+  font-size: 2em;
+  transform: rotate(30deg);
+  transform-origin: 50%;
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+  border: solid 1px #666;
+}
+
+.item-2 {
+  font-size: 4em;
+  transform: rotate(30deg);
+  transform-origin: 50%;
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+  border: solid 1px #666;
+}
+
+.item-3 {
+  font-size: 6em;
+  transform: rotate(30deg);
+  transform-origin: 50%;
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+  border: solid 1px #666;
+}
+
+/*# sourceMappingURL=mystyle.css.map */

@@ -1,0 +1,59 @@
+
+
+@import './reset';
+@import './mixins';
+@import './inherit';
+
+$font-stack: Helvetica, sans-serif;
+$primay-color: #333;
+$text-align: left;
+$width: 5em;
+$age: 18;
+
+body {
+    font: 100% $font-stack;
+    color: $primay-color;
+    text-align: $text-align;
+}
+
+#main {
+    width: 100%;
+}
+
+#sidebar {
+    width: $width;
+}
+
+p {
+    font-size: (200px)/8;
+    width: round(100.5px) / 2;
+    $width: 1000px;
+    width: $width / 2;
+    margin-left: 5em + 8px/2px;
+    @if($age >= 18) {
+        color: blue;
+    }
+}
+
+$pseudoClass: ':after';
+p#{$pseudoClass} {
+    content: ' your ' + 'age is #{$age}';
+    display: block;
+}
+
+$myval1: "1234";
+$myval1: "Sass Developed by Natalie Weizenbaum and Chris Eppstein" !default;
+
+p:after {
+   content: $myval1;
+}
+
+@for $i from 1 through 3 {
+    .item-#{$i} {
+        font-size: 2em * $i;
+        @include transform(rotate(30deg));
+        display: inline-block;
+        @include colors(red, yellow, #666);
+        @extend %commonPadding;
+    }
+}

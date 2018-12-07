@@ -1,0 +1,4 @@
+@mixin color($bgColor, $borderColor) {
+    background-color: $bgColor;
+    border: solid 1px $borderColor;
+}

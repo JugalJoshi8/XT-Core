@@ -1,0 +1,60 @@
+@import './reset';
+@import './inherit';
+
+$numPadding: 10px;
+$numHoverBG: rgb(34, 149, 243);
+$numWidth: 25%;
+$numFontSize: 18px;
+$wrapperWidth: 70%;
+
+.wrapper {
+    width: $wrapperWidth;
+    margin: 0 auto;
+    border: solid 4px rgb(47, 203, 255);
+
+}
+
+.numpad {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: solid 1px grey; 
+}
+
+ .numpad > div{
+    width: $numWidth;
+    padding: $numPadding;
+    text-align: center;
+    font-size: $numFontSize;
+    cursor: pointer;
+    @extend %cursorPointer;
+    box-shadow: 2px 2px 4px #999;
+    border-radius: 5px;
+    border: solid 1px #666;
+    background-color: rgb(144, 202, 241);
+}
+
+.numpad > div:hover {
+    background-color: $numHoverBG;
+    box-shadow: 2px 2px 4px skyblue;
+}
+
+.numpad > div:nth-child(-n + 24) {
+    border-bottom: solid 1px grey; 
+}
+
+.numpad > div:not(:nth-child(4n)) {
+    border-right: solid 1px grey; 
+
+}
+
+input {
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    border: solid 2px black;
+    font-size: 24px;
+}
+

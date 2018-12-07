@@ -1,0 +1,62 @@
+html, body, h1, p {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.numpad > div {
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  border: solid 4px #2fcbff;
+}
+
+.numpad {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top: solid 1px grey;
+}
+
+.numpad > div {
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px #999;
+  border-radius: 5px;
+  border: solid 1px #666;
+  background-color: #90caf1;
+}
+
+.numpad > div:hover {
+  background-color: #2295f3;
+  box-shadow: 2px 2px 4px skyblue;
+}
+
+.numpad > div:nth-child(-n+24) {
+  border-bottom: solid 1px grey;
+}
+
+.numpad > div:not(:nth-child(4n)) {
+  border-right: solid 1px grey;
+}
+
+input {
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+  font-weight: bold;
+  border: solid 2px black;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=styles.css.map */

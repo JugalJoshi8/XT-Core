@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "hello": "node index.js",
+    "build": "tsc index.ts"
+  },
+  "author": "JJ",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "test111898989": "^1.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "typescript": "^3.2.2"
+  }
+}

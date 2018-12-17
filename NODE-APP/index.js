@@ -1,12 +1,18 @@
-const NEFTTransferService = require('./services/NEFTTansferService');
+const { EventEmitter } = require('events');
+const eventEmitter = new EventEmitter();
 
-//init phase
-console.log('----------');
-const neftService = new NEFTTransferService();
-console.log('----------');
+//event listeners
+eventEmitter.on('greet', _ => {
+    console.log('I am hadling greet signal');
+});
 
-//use
-console.log('----------');
-neftService.transfer(100.00, "1", "2");
-neftService.transfer(100.00, "2", "1");
-console.log('----------');
+eventEmitter.once('goodbye', _ => {
+    console.log('I am hadling goodbye signal');
+});
+
+//emission
+
+eventEmitter.emit('greet');
+eventEmitter.emit('greet');
+eventEmitter.emit('goodbye');
+eventEmitter.emit('goodbye');

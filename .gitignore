@@ -1,9 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/JS-ES6/mock-server/node_modules
-/BOOTSTRAP-APP/node_modules
+**/node_modules
 /.pnp
 .pnp.js
 

@@ -3,5 +3,7 @@ The folder contains the following use cases week-wise.
 
 ## week 6
 
-### UC1 --> 1. Store all customer ans their orders into json file
-            2. List the customer report in console
+### UC1 --> 1. Store all customer ans their orders into json file.  2. List the customer report in console
+
+### UC2 --> 1. Client will upload a file. 2. Sever will read the file and write it into a folder called "assets". 3. File name should be "File name + number + date time stamp" 4. you need to show progress bar in client side with %
+           

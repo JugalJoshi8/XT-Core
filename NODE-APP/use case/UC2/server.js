@@ -11,7 +11,7 @@ const app = (request, response) => {
     }
     else {
         counter++;
-        var filename = 'file' + counter + '_' +  new Date().toDateString() + new Date().getTime();
+        var filename = 'file' + counter + '_' + new Date().toDateString() + new Date().getTime();
         let progress = 0;
         const totalLength = request.headers['content-length'];
         console.log('total length', totalLength);
@@ -23,16 +23,16 @@ const app = (request, response) => {
             console.log('chunk length', chunk.length);
             response.write(`<div>Uploaded: ${parseInt((progress / totalLength) * 100)}%</div>`);
             console.log(parseInt((progress / totalLength) * 100));
-      });
-  
-      request.on('end', _ => {
-          response.end();
-          console.log('there are no more events to be processed');
-      })
-      
-      writeStream.on('close', _ => {
-          console.log('File has been closed');
-      })
+        });
+
+        request.on('end', _ => {
+            response.end();
+            console.log('there are no more events to be processed');
+        })
+
+        writeStream.on('close', _ => {
+            console.log('File has been closed');
+        })
     }
 }
 

@@ -4,7 +4,13 @@ $redcolor: red;
     color: $redcolor;
 }
 
+ul {
+    list-style: none;
+}
+
 li {
     padding: 10px;
-    border: soild 1px #ccc; 
+    border: solid 1px #ccc; 
+    cursor: pointer;
+    color: $redcolor;
 }

@@ -24,6 +24,23 @@ class ProfileComponent {
         this.renderProfiles();
     }
 
+
+
+    addProfile() {
+        const profileID = Math.floor((Math.random()*1000));
+        this.profiles.push({
+            'name': 'n' + profileID,
+            'city': 'c2' + profileID,
+            id: '' + profileID
+        });
+        this.renderProfiles();
+    }
+
+    deleteProfile(i) {
+        this.profiles.splice(i, 1);
+        this.renderProfiles();
+    }
+
     renderProfiles() {
         document.getElementsByTagName('body')[0].innerHTML = '';
         const ul = document.createElement('ul');
@@ -31,9 +48,18 @@ class ProfileComponent {
         for(let i =0; i< this.profiles.length; i++) {
             li = document.createElement('li');
             li.innerHTML = `Name: ${this.profiles[i].name}, City: ${this.profiles[i].city}`;
+            li.onclick = () => {
+                this.deleteProfile(i);
+            };
             ul.appendChild(li);
         }
         document.getElementsByTagName('body')[0].appendChild(ul);
+        const btn = document.createElement('button');
+        btn.innerHTML = `Add Profile`;
+        btn.onclick = () => {
+            this.addProfile();
+        };
+        document.getElementsByTagName('body')[0].appendChild(btn);
     }
  }
 

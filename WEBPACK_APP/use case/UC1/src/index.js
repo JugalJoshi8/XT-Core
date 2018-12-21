@@ -28,11 +28,11 @@ class ProfileComponent {
 
     addProfile() {
         const profileID = Math.floor((Math.random()*1000));
-        this.profiles.push({
+        this.profiles =  _.concat(this.profiles, [{
             'name': 'n' + profileID,
             'city': 'c2' + profileID,
             id: '' + profileID
-        });
+        }]);
         this.renderProfiles();
     }
 
